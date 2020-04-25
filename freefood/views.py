@@ -51,8 +51,9 @@ def signIn(request):
 
 
 def showEventUser(request):
-    username = request.POST['username']
-    user = User.objects.get_object_or_404(username=username)
+    print(request.POST)
+    username = request.POST.get('username',0)
+    user = User.objects.get(username=username)
     events = user.EventsRegister.all().values_list('id', flat=True).values()
     res = []
     for i in range(len(events)):
