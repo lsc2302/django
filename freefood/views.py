@@ -39,7 +39,7 @@ def sign_up(request):
 
 def check_user_online(request):
     if 'username' in request.session:
-        return JsonResponse({"status": 0,"username":request.session['username']})
+        return JsonResponse({"status": 0,"username": request.session['username']})
     else:
         return JsonResponse({"status": 1})
 
@@ -60,11 +60,15 @@ def sign_in(request):
 
 
 def show_events(request):
-    # username = request.POST.get('username',0)
-    events = Event.objects.all().values()
+    events = Event.objects.all()
     res = []
     for i in range(len(events)):
-        res.append(events[i])
+        event = events.values()[i]
+        users = events[i].user_set.all()
+        for j in range(len(users)):
+            if users.values()[j]['username'] == request.session['username']:
+                event['star'] = True
+        res.append(event)
     return JsonResponse({"status": 0,"data":res})
 
 
@@ -79,18 +83,16 @@ def show_event_user(request):
 
 
 def add_event_user(request):
-    username = request.POST['username']
     eventid = request.POST['eventId']
-    user = User.objects.get(username=username)
+    user = User.objects.get(username=request.session["username"])
     event = Event.objects.get(id=eventid)
     user.EventsRegister.add(event)
     return JsonResponse({"status": 0})
 
 
 def remove_event_user(request):
-    username = request.POST['username']
     eventid = request.POST['eventId']
-    user = User.objects.get(username=username)
+    user = User.objects.get(username=request.session["username"])
     event = Event.objects.get(id=eventid)
     user.EventsRegister.remove(event)
     return JsonResponse({"status": 0})
