@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af20e091-ca67-48e2-8004-02b0eb03c80b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/freefood/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/freefood/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freefood/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/freefood/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="af20e091-ca67-48e2-8004-02b0eb03c80b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,12 +231,12 @@
       <workItem from="1587326594912" duration="5108000" />
       <workItem from="1587606532390" duration="7332000" />
       <workItem from="1587660773379" duration="83000" />
-      <workItem from="1587768728669" duration="25731000" />
+      <workItem from="1587768728669" duration="26331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50837000" />
+    <option name="totallyTimeSpent" value="51437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="19" width="1920" height="1061" extended-state="6" />
