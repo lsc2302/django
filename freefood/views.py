@@ -50,8 +50,16 @@ def signIn(request):
         return JsonResponse({"status": 2, "msg": "user not exist!!"})
 
 
+def showEvents(request):
+    # username = request.POST.get('username',0)
+    events = Event.objects.all().values()
+    res = []
+    for i in range(len(events)):
+        res.append(events[i])
+    return JsonResponse({"status": 0,"data":res})
+
+
 def showEventUser(request):
-    print(request.POST)
     username = request.POST.get('username',0)
     user = User.objects.get(username=username)
     events = user.EventsRegister.all().values_list('id', flat=True).values()
