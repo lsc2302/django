@@ -14,12 +14,13 @@ def addEvent(request):
     day = request.POST['Eday']
     Estarthour = request.POST['Estarthour']
     Estartmin = request.POST['Estartmin']
-    Eendhour = request.POST['Estarthour']
+    Eendhour = request.POST['Eendhour']
     Eendmin = request.POST['Eendmin']
     event.Estart = datetime(int(year), int(month), int(day), int(Estarthour), int(Estartmin))
     event.Eend = datetime(int(year), int(month), int(day), int(Eendhour), int(Eendmin))
     event.Eplace = request.POST['Eplace']
     event.Edescription = request.POST['Edescription']
+    event.Eopen = request.POST['Eopen']
     event.Ersvps = request.POST['Ersvps']
     event.save()
     return JsonResponse({"status": 0})
