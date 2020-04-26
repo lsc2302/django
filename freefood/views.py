@@ -5,7 +5,7 @@ from freefood.models import Event, User
 from datetime import datetime
 
 
-def addEvent(request):
+def add_event(request):
     event = Event()
     event.Etitle = request.POST['Etitle']
     event.Etype = request.POST['Etype']
@@ -26,7 +26,7 @@ def addEvent(request):
     return JsonResponse({"status": 0})
 
 
-def signUp(request):
+def sign_up(request):
     user = User()
     user.username = request.POST['username']
     user.password = request.POST['password']
@@ -37,21 +37,29 @@ def signUp(request):
     return JsonResponse({"status": 0})
 
 
-def signIn(request):
+def check_user_online(request):
+    if 'username' in request.session:
+        return JsonResponse({"status": 0,"username":request.session['username']})
+    else:
+        return JsonResponse({"status": 1})
+
+
+def sign_in(request):
     username = request.POST['username']
     password = request.POST['password']
     try:
         user = User.objects.get(username=username)
         if user:
             if password == user.password:
+                request.session['username'] = username
                 return JsonResponse({"status": 0})
             else:
-                return JsonResponse({"status": 1, "msg": "wrong password"})
+                return JsonResponse({"status": 1, "msg": "wrong password or username"})
     except User.DoesNotExist:
         return JsonResponse({"status": 2, "msg": "user not exist!!"})
 
 
-def showEvents(request):
+def show_events(request):
     # username = request.POST.get('username',0)
     events = Event.objects.all().values()
     res = []
@@ -60,7 +68,7 @@ def showEvents(request):
     return JsonResponse({"status": 0,"data":res})
 
 
-def showEventUser(request):
+def show_event_user(request):
     username = request.POST.get('username',0)
     user = User.objects.get(username=username)
     events = user.EventsRegister.all().values_list('id', flat=True).values()
@@ -70,7 +78,7 @@ def showEventUser(request):
     return JsonResponse({"status": 0,"data":res})
 
 
-def addEventUser(request):
+def add_event_user(request):
     username = request.POST['username']
     eventid = request.POST['eventId']
     user = User.objects.get(username=username)
@@ -79,7 +87,7 @@ def addEventUser(request):
     return JsonResponse({"status": 0})
 
 
-def removeEventUser(request):
+def remove_event_user(request):
     username = request.POST['username']
     eventid = request.POST['eventId']
     user = User.objects.get(username=username)
