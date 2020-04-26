@@ -59,6 +59,14 @@ def sign_in(request):
         return JsonResponse({"status": 2, "msg": "user not exist!!"})
 
 
+def logout(request):
+    try:
+        del request.session['username']
+        return JsonResponse({"status": 0})
+    except:
+        return JsonResponse({"status": 1, "msg": "logout failed!"})
+
+
 def show_events(request):
     events = Event.objects.all()
     res = []
@@ -96,3 +104,5 @@ def remove_event_user(request):
     event = Event.objects.get(id=eventid)
     user.EventsRegister.remove(event)
     return JsonResponse({"status": 0})
+
+
