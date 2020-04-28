@@ -3,6 +3,7 @@
 from django.http import JsonResponse
 from freefood.models import Event, User
 from datetime import datetime
+from django.forms.models import model_to_dict
 
 
 def add_event(request):
@@ -52,7 +53,15 @@ def sign_in(request):
         if user:
             if password == user.password:
                 request.session['username'] = username
-                return JsonResponse({"status": 0})
+                model = model_to_dict(user)
+                res = dict()
+                res['id'] = model['id']
+                res['username'] = model['username']
+                res['password'] = model['password']
+                res['location'] = model['location']
+                res['email'] = model['email']
+                res['tel'] = model['tel']
+                return JsonResponse({"status": 0,"user": res})
             else:
                 return JsonResponse({"status": 1, "msg": "wrong password or username"})
     except User.DoesNotExist:
