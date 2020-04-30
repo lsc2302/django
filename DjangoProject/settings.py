@@ -25,7 +25,7 @@ SECRET_KEY = 'e&)=v_^w)(nso-*#j&^mvvwgwy=)38(%k^wq_*i5+3&i0(m_gs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','lsc-freefood.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1:8000', 'lsc-freefood.herokuapp.com']
 
 CORS_ORIGIN_ALLOW_ALL = False
 
@@ -62,8 +62,7 @@ ROOT_URLCONF = 'DjangoProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

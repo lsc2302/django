@@ -1,9 +1,13 @@
 # Create your views here.
 
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from freefood.models import Event, User
 from datetime import datetime
 from django.forms.models import model_to_dict
+
+
+def index(request):
+    return HttpResponse("index")
 
 
 def add_event(request):
