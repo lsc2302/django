@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af20e091-ca67-48e2-8004-02b0eb03c80b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freefood/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/freefood/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +30,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoProject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DjangoProject/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#229#238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freefood/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
@@ -43,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freefood/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-40">
+            <state relative-caret-position="496">
               <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
               <folding>
                 <element signature="e#27#63#0" expanded="true" />
@@ -52,10 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/freefood/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="100">
               <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -103,12 +125,13 @@
         <option value="$PROJECT_DIR$/DjangoProject/__init__.py" />
         <option value="$PROJECT_DIR$/freefood/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/DjangoProject/urls.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/settings.py" />
         <option value="$PROJECT_DIR$/freefood/migrations/0004_auto_20200424_2346.py" />
         <option value="$PROJECT_DIR$/freefood/models.py" />
         <option value="$PROJECT_DIR$/freefood/admin.py" />
         <option value="$PROJECT_DIR$/freefood/urls.py" />
         <option value="$PROJECT_DIR$/freefood/views.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/settings.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/wsgi.py" />
       </list>
     </option>
   </component>
@@ -124,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,15 +159,11 @@
               <item name="DjangoProject" type="462c0819:PsiDirectoryNode" />
               <item name="DjangoProject" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DjangoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DjangoProject" type="462c0819:PsiDirectoryNode" />
-              <item name="freefood" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,18 +253,20 @@
       <workItem from="1587606532390" duration="7332000" />
       <workItem from="1587660773379" duration="83000" />
       <workItem from="1587768728669" duration="31279000" />
-      <workItem from="1588052756058" duration="808000" />
+      <workItem from="1588052756058" duration="1408000" />
+      <workItem from="1588181485193" duration="1136000" />
+      <workItem from="1588254517117" duration="2002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57193000" />
+    <option name="totallyTimeSpent" value="60931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="19" width="1920" height="1061" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2803437" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28893661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -260,7 +280,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053704" side_tool="true" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946293" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946293" visible="true" weight="0.32922733" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32997763" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -290,13 +310,6 @@
     <entry file="file://$PROJECT_DIR$/freefood/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="50" column="59" lean-forward="true" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DjangoProject/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -322,18 +335,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/urls.py">
+    <entry file="file://$PROJECT_DIR$/freefood/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
+        <state relative-caret-position="100">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding>
-            <element signature="e#637#669#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/freefood/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/freefood/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -345,9 +355,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/freefood/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/freefood/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-40">
+        <state relative-caret-position="496">
           <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
           <folding>
             <element signature="e#27#63#0" expanded="true" />
@@ -365,12 +378,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/freefood/urls.py">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda3/lib/python3.7/site-packages/whitenoise/django.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#229#238#0" expanded="true" />
           </folding>
         </state>
       </provider>
